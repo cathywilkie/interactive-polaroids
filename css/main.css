@@ -44,17 +44,23 @@ html {
 }
 
 /* ------------------HOVER---------------- */
+
+.polaroid:hover {
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.9);
+  transition: all 1s ease;
+}
+
 .polaroid:nth-child(1):hover {
-  transform: translate(12em, 10em) rotate(0);
+  transform: rotate(0) translate(12em, 10em);
   z-index: 1000;
 }
 
 .polaroid:nth-child(2):hover {
-  transform: translate(18em, 2em) rotate(0);
+  transform: rotate(0) translate(18em, 2em);
   z-index: 1000;
 }
 
 .polaroid:nth-child(3):hover {
-  transform: translate(25em, -16em) rotate(0);
+  transform: rotate(0) translate(24em, -13em);
   z-index: 1000;
 }
