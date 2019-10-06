@@ -14,7 +14,8 @@ html {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
 
   transform: translate(13em, 0);
-  position: relative;
+  position: absolute;
+  transition: all 1s ease;
 }
 
 .polaroid > img {
@@ -29,38 +30,37 @@ html {
 }
 
 .polaroid:nth-child(1) {
-  transform: translate(12em, 10em) rotate(-18deg);
+  transform: translate(10em, 6em) rotate(-14deg);
   z-index: 30;
 }
 
 .polaroid:nth-child(2) {
-  transform: translate(18em, 2em) rotate(8deg);
+  transform: translate(16em, 9em) rotate(6deg);
   z-index: 100;
 }
 
 .polaroid:nth-child(3) {
-  transform: translate(24em, -13em) rotate(25deg);
+  transform: translate(22em, 6em) rotate(25deg);
   z-index: 50;
 }
 
 /* ------------------HOVER---------------- */
 
 .polaroid:hover {
-  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.9);
-  transition: all 1s ease;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, .9);
 }
 
 .polaroid:nth-child(1):hover {
-  transform: rotate(0) translate(12em, 10em);
+  transform: rotate(0) translate(10em, 6em);
   z-index: 1000;
 }
 
 .polaroid:nth-child(2):hover {
-  transform: rotate(0) translate(18em, 2em);
+  transform: rotate(0) translate(16em, 9em);
   z-index: 1000;
 }
 
 .polaroid:nth-child(3):hover {
-  transform: rotate(0) translate(24em, -13em);
+  transform: rotate(0) translate(22em, 6em);
   z-index: 1000;
 }
